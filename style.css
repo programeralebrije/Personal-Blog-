@@ -6,8 +6,8 @@
     --light : #f8f9fa;
     --secondary: #adb5bd;
     --dark: #343a40;
-    --primary-color: #f15bb5;
-    --secondary-color: #2ec4b6;
+    --primary-color: #555555;
+    --secondary-color: #234969;
     --border : #e9ecef;
 }
 
@@ -180,6 +180,47 @@ a{
 /* section styling */
  
 /* ------- Navigation Menu ---------- */
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #234969;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #234969;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #234969;
+    background: #234969;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 100%;
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .navbar{
     position: relative;
     display: flex;
